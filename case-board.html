@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="case-styles.css">
+  
+  <title>Case Board</title>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <nav class="nav">
+    <a href="index.html" class="nav_logo">Case Board</a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <ul class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-board.html">Case Board</a></li>
+      <li><a href="suspects.html">Suspects</a></li>
+      <li><a href="evidence.html">Evidence</a></li>
+      <li><a href="reveal" class="reveal_button">Reveal</a></li>
+    </ul>
+
+    <label for="menu-toggle" class="menu-icon">
+      ☰
+    </label>
+  </nav>
+
+  <main>
+    <section class="overview_section">
+      <h2>Case Overview</h2>
+      <h3 class="what_we_know"> Here's what we know so far ...</h3>
+      <p class="detailed_overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic quod minus error dolorem sed dolore qui suscipit asperiores ea, cupiditate accusamus animi, laborum nisi doloremque possimus sit nemo veniam culpa! Perferendis ducimus placeat voluptate perspiciatis aspernatur cumque nulla, quo est illo maiores culpa laboriosam hic numquam fugiat aliquam cupiditate.</p>
+    </section>
+
+    <hr class="section_divider">
+
+    <h2 class="clues">Clues</h2>
+    <section class="card_grid">
+      <div class="flip_card">
+        <input type="checkbox" id="card1" class="flip_toggle">
+        <label for="card1" class="flip_card_inner">
+          <div class="flip_card_front">
+            <h3>Clue 1 (Critical)</h3>
+            <h3>Title</h3>
+            <p>Click on the button for more details</p>
+          </div>
+          <div class="flip_card_back">
+            <h3>Clue 2 Details</h3>
+            <h5>Details:</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quia consectetur veritatis rerum impedit sint dolorem quidem debitis atque hic adipisci repudiandae, deleniti qui sequi. Suscipit consequuntur pariatur assumenda! Totam eligendi maxime cumque recusandae amet quo quisquam dolore sapiente quibusdam temporibus, expedita mollitia dolorum possimus numquam error sunt tempore facilis?</p>
+          </div>
+        </label>
+      </div>
+      
+      <div class="flip_card">
+        <input type="checkbox" id="card2" class="flip_toggle">
+        <label for="card2" class="flip_card_inner">
+          <div class="flip_card_front">
+            <h3>Clue 1 (Critical)</h3>
+            <h3>Title</h3>
+            <p>Click on the button for more details</p>
+          </div>
+          <div class="flip_card_back">
+            <h3>Clue 2 Details</h3>
+            <h5>Details:</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quia consectetur veritatis rerum impedit sint dolorem quidem debitis atque hic adipisci repudiandae, deleniti qui sequi. Suscipit consequuntur pariatur assumenda! Totam eligendi maxime cumque recusandae amet quo quisquam dolore sapiente quibusdam temporibus, expedita mollitia dolorum possimus numquam error sunt tempore facilis?</p>
+          </div>
+        </label>
+      </div>
+      
+      <div class="flip_card">
+        <input type="checkbox" id="card3" class="flip_toggle">
+        <label for="card3" class="flip_card_inner">
+          <div class="flip_card_front">
+            <h3>Clue 1 (Critical)</h3>
+            <h3>Title</h3>
+            <p>Click on the button for more details</p>
+          </div>
+          <div class="flip_card_back">
+            <h3>Clue 2 Details</h3>
+            <h5>Details:</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quia consectetur veritatis rerum impedit sint dolorem quidem debitis atque hic adipisci repudiandae, deleniti qui sequi. Suscipit consequuntur pariatur assumenda! Totam eligendi maxime cumque recusandae amet quo quisquam dolore sapiente quibusdam temporibus, expedita mollitia dolorum possimus numquam error sunt tempore facilis?</p>
+          </div>
+        </label>
+      </div>
+      
+      <div class="flip_card">
+        <input type="checkbox" id="card4" class="flip_toggle">
+        <label for="card4" class="flip_card_inner">
+          <div class="flip_card_front">
+            <h3>Clue 1 (Critical)</h3>
+            <h3>Title</h3>
+            <p>Click on the button for more details</p>
+          </div>
+          <div class="flip_card_back">
+            <h3>Clue 2 Details</h3>
+            <h5>Details:</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quia consectetur veritatis rerum impedit sint dolorem quidem debitis atque hic adipisci repudiandae, deleniti qui sequi. Suscipit consequuntur pariatur assumenda! Totam eligendi maxime cumque recusandae amet quo quisquam dolore sapiente quibusdam temporibus, expedita mollitia dolorum possimus numquam error sunt tempore facilis?</p>
+          </div>
+        </label>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    Case File #: 12643 &nbsp;·&nbsp; March 1st  &nbsp;·&nbsp; Murder Mystery 
+  </footer>
+</body>
+</html>
