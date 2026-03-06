@@ -48,7 +48,7 @@
 .flip_card{
   display: flex;
   background-color: transparent;
-  min-height: 200px;
+  min-height: 250px;
   perspective: 1000px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -70,13 +70,10 @@
   display: block;
   cursor: pointer;
   width: 100%;
+  align-self: stretch;
+  min-height: inherit;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
-
-.flip_card_front{
-  text-align: center;
-  padding-top: 40px;
 }
 
 .clue_num{
@@ -129,6 +126,13 @@
   border-radius: 15px;
 }
 
+.flip_card_front{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .flip_card_back{
   position: absolute;
   display: flex;
@@ -137,8 +141,50 @@
   align-items: center;
   transform: rotateY(180deg);
   padding: 20px;
+  overflow-y: auto;
 }
 
 .back_details{
   font-size: 18px;
+}
+
+/* Mobile Responsive */
+@media (min-width: 641px) and (max-width: 1024px){
+  .card_grid{
+    padding: 20px;
+  }
+
+  .flip_card{
+    height: 350px;
+  }
+
+  .flip_card_front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width: 600px){
+  .card_grid{
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .flip_card{
+    height: 300px;
+    min-height: unset;
+  }
+
+  .flip_card_front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip_card_back{
+    padding: 20px 15px;
+  }
 }
