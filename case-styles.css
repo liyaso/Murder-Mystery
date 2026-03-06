@@ -107,14 +107,6 @@
   }
 }
 
-.reviewed{
-  background-color: darkgreen;
-}
-
-.unread{
-  background-color: rgb(2, 2, 99);
-}
-
 .flip_card_front, .flip_card_back{
   position: absolute;
   width: 100%;
@@ -131,6 +123,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card_label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .flip_card_back{
