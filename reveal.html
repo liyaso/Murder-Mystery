@@ -9,13 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reveal.css">
 
   <title>Reveal</title>
 </head>
 <body>
   <!--Navigation Bar-->
   <nav class="nav">
-    <a href="index.html" class="nav_logo">Murder Mystery</a>
+    <a href="reveal.html" class="nav_logo">Reveal</a>
 
     <input type="checkbox" id="menu-toggle">
 
@@ -24,7 +25,7 @@
       <li><a href="case-board.html">Case Board</a></li>
       <li><a href="suspects.html">Suspects</a></li>
       <li><a href="evidence.html">Evidence</a></li>
-      <li><a href="reveal" class="reveal_button">Reveal</a></li>
+      <li><a href="reveal.html" class="reveal_button">Reveal</a></li>
     </ul>
 
     <label for="menu-toggle" class="menu-icon">
@@ -32,7 +33,23 @@
     </label>
   </nav>
 
-  
+  <main>
+    <section class="question_section">
+      <div class="card">
+        <h1>Who do you think the killer is?</h1>
+        <div class="buttons">
+          <a href="reveal_correct.html" class="button_link">Suspect 1</a>
+          <a href="reveal_incorrect.html" class="button_link">Suspect 2</a>
+          <a href="reveal_incorrect.html" class="button_link">Suspect 3</a>
+          <a href="reveal_incorrect.html" class="button_link">Suspect 4</a>
+          <a href="reveal_incorrect.html" class="button_link">Suspect 5</a>
+          <a href="reveal_incorrect.html" class="button_link">Suspect 6</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+  </main>
   
 </body>
 </html>
