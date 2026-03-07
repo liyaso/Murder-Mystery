@@ -104,7 +104,6 @@
 }
 
 /* Flicker animation */
-/*
 @keyframes flicker{
   0% {opacity: 0;}
   10% {opacity: 0.8;}
@@ -115,6 +114,52 @@
   90% {opacity: 0.4;}
   100% {opacity: 1;}
 }
-*/
 
+/* Mobile Responsive */
+@media (min-width: 601px) and (max-width: 1024px){
+  .not_quite{
+    font-size: 47px;
+  }
 
+  .inc_description, .question{
+    font-size: 30px;
+  }
+
+  .try_again, .answer{
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 600px){
+  .incorrect_reveal{
+    padding: 0 15px;
+  }
+
+  .not_quite{
+    font-size: 47px;
+  }
+  
+  .inc_description, .question{
+    font-size: 30px;
+  }
+
+  .button_row{
+    gap: 100px;
+  }
+  
+  .try_again, .answer{
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .answer_section{
+    margin: 15px;
+  }
+
+  .answer_title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+}
