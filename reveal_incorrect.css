@@ -4,7 +4,6 @@
   justify-content: center;
   text-align: center;
   margin-top: 100px;
-  animation: flicker 4s linear 0s 1 alternate forwards;
   z-index: 2;
 }
 
@@ -54,6 +53,10 @@
   transform: translateY(-5px);
 }
 
+a:focus-visible,  label:focus-visible{
+  outline: 2px solid #ffd700;
+  outline-offset: 4px;
+}
 
 .answer_section{
   display: block;
@@ -95,7 +98,7 @@
 }
 
 .suspect_name{
-  color: red;
+  color: var(--red-text);
   font-size: 36px;
 }
 
@@ -113,6 +116,20 @@
   80% {opacity: 0.2;}
   90% {opacity: 0.4;}
   100% {opacity: 1;}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: no-preference){
+  .incorrect_reveal{
+    animation: flicker 4s linear 0s 1 alternate forwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .incorrect_reveal{
+    animation: none;
+    opacity: 1;
+  }
 }
 
 /* Mobile Responsive */

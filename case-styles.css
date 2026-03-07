@@ -101,12 +101,6 @@
   background-color: var(--red-text);
 }
 
-@media (prefers-reduced-motion: no-preference){
-  .critical{
-    animation: pulse 2.5s infinite;
-  }
-}
-
 .flip_card_front, .flip_card_back{
   position: absolute;
   width: 100%;
@@ -148,6 +142,19 @@
 
 .back_details{
   font-size: 18px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: no-preference){
+  .critical{
+    animation: pulse 2.5s infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .critical{
+    animation: none;
+  }
 }
 
 /* Mobile Responsive */

@@ -42,6 +42,11 @@
   transform: translateY(-5px);
 }
 
+.button_link:focus-visible{
+  outline: 2px solid #ffd700;
+  outline-offset: 4px;
+}
+
 /* Mobile Responsive */
 @media (min-width: 641px) and (max-width: 860px){
   .card{
