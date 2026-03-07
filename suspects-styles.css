@@ -1,0 +1,218 @@
+.suspects_intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5vh 10% 3vh;
+  gap: 16px;
+}
+
+.suspects_intro h1{
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--red-text);
+}
+
+.suspects_subheading{
+  font-family: var(--font-body);
+  font-size: 22px;
+  color: var(--secondary-red);
+}
+
+.suspects_description{
+  max-width: 780px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--secondary-red);
+}
+
+.section_divider{
+  width: 100%;
+  border-color: var(--red-accent);
+}
+
+.suspects_grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 30px 60px 50px;
+}
+
+.suspect_card{
+  background-color: transparent;
+  min-height: 500px;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.suspect_card:hover{
+  transform: translateY(-5px);
+}
+
+.suspect_toggle{
+  display: none;
+}
+
+.suspect_toggle:checked + .suspect_card_inner{
+  transform: rotateY(180deg);
+}
+
+.suspect_card_inner{
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.suspect_card_front,
+.suspect_card_back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  background-color: #510101;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.suspect_card_front{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.suspect_card_back{
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px 20px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.suspect_label{
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.suspect_image{
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 3 / 4;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.suspect_image img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.suspect_name,
+.suspect_back_name{
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: white;
+}
+
+.suspect_name{
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.suspect_back_name{
+  font-size: 28px;
+  color: var(--red-text);
+}
+
+.suspect_role{
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: #d8b3b3;
+  margin-bottom: 14px;
+}
+
+.suspect_hint{
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: #f1d7d7;
+}
+
+.suspect_card_back p{
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: #f5eaea;
+}
+
+.detail_label{
+  font-weight: 700;
+  color: var(--red-text);
+}
+
+@media (min-width: 641px) and (max-width: 1024px){
+  .suspects_grid{
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    padding: 25px 30px 45px;
+    gap: 24px;
+  }
+
+  .suspect_card{
+    min-height: 470px;
+  }
+
+  .suspect_name{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px){
+  .suspects_intro{
+    padding: 40px 20px 24px;
+  }
+
+  .suspects_intro h1{
+    font-size: 32px;
+  }
+
+  .suspects_subheading{
+    font-size: 20px;
+  }
+
+  .suspects_grid{
+    grid-template-columns: 1fr;
+    padding: 20px 12px 40px;
+    gap: 20px;
+  }
+
+  .suspect_card{
+    min-height: 460px;
+  }
+
+  .suspect_name{
+    font-size: 26px;
+  }
+
+  .suspect_back_name{
+    font-size: 24px;
+  }
+
+  .suspect_card_back{
+    padding: 22px 18px;
+  }
+}
