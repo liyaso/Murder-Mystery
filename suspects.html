@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="suspects-styles.css">
+
+  <title>Suspects</title>
+</head>
+<body>
+  <nav class="nav">
+    <a href="suspects.html" class="nav_logo">Suspects</a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <ul class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-board.html">Case Board</a></li>
+      <li><a href="suspects.html">Suspects</a></li>
+      <li><a href="evidence.html">Evidence</a></li>
+      <li><a href="reveal.html" class="reveal_button">Reveal</a></li>
+    </ul>
+
+    <label for="menu-toggle" class="menu-icon">
+      ☰
+    </label>
+  </nav>
+
+  <main>
+    <section class="suspects_intro">
+      <h1>Suspects</h1>
+      <p class="suspects_subheading">Every guest had a reason to want Adrian Vale gone.</p>
+      <p class="suspects_description">
+        Adrian Vale, the wealthy host of the evening, was found dead shortly after the estate dinner ended.
+        These six people were the last known individuals with access to him before the lights went out.
+        Click each suspect card to inspect their file.
+      </p>
+    </section>
+
+    <hr class="section_divider">
+
+    <section class="suspects_grid">
+
+      <div class="suspect_card">
+        <input type="checkbox" id="suspect1" class="suspect_toggle">
+        <div class="suspect_card_inner">
+          <div class="suspect_card_front">
+            <label for="suspect1" class="suspect_label"></label>
+            <div class="suspect_image">
+              <img src="images/placeholder.png" alt="Portrait placeholder for Lena Cross">
+            </div>
+            <h2 class="suspect_name">Lena Cross</h2>
+            <p class="suspect_role">Personal Assistant</p>
+            <p class="suspect_hint">Click to inspect suspect file</p>
+          </div>
+
+          <div class="suspect_card_back">
+            <label for="suspect1" class="suspect_label"></label>
+            <h2 class="suspect_back_name">Lena Cross</h2>
+            <p><span class="detail_label">Role:</span> Adrian Vale’s personal assistant for the last three years.</p>
+            <p><span class="detail_label">Motive:</span> She had recently learned Adrian planned to fire her after accusing her of leaking private information.</p>
+            <p><span class="detail_label">Alibi:</span> Claims she was organizing guest records in the study during the time of the murder.</p>
+            <p><span class="detail_label">Suspicious Detail:</span> She had access to nearly every room in the house, including Adrian’s private office.</p>
+            <p><span class="detail_label">Notes:</span> Calm under pressure, but several staff members heard her arguing with Adrian earlier that night.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="suspect_card">
+        <input type="checkbox" id="suspect2" class="suspect_toggle">
+        <div class="suspect_card_inner">
+          <div class="suspect_card_front">
+            <label for="suspect2" class="suspect_label"></label>
+            <div class="suspect_image">
+              <img src="images/placeholder.png" alt="Portrait placeholder for Marcus Reed">
+            </div>
+            <h2 class="suspect_name">Marcus Reed</h2>
+            <p class="suspect_role">Business Partner</p>
+            <p class="suspect_hint">Click to inspect suspect file</p>
+          </div>
+
+          <div class="suspect_card_back">
+            <label for="suspect2" class="suspect_label"></label>
+            <h2 class="suspect_back_name">Marcus Reed</h2>
+            <p><span class="detail_label">Role:</span> Adrian’s longtime business partner and co-owner of several properties.</p>
+            <p><span class="detail_label">Motive:</span> Adrian was preparing to remove Marcus from a major investment deal after discovering missing funds.</p>
+            <p><span class="detail_label">Alibi:</span> Says he remained in the dining hall speaking with guests after dessert.</p>
+            <p><span class="detail_label">Suspicious Detail:</span> A witness says Marcus left the dining hall for several minutes just before the power outage.</p>
+            <p><span class="detail_label">Notes:</span> Appears confident and cooperative, but has a strong financial reason to want Adrian silent.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="suspect_card">
+        <input type="checkbox" id="suspect3" class="suspect_toggle">
+        <div class="suspect_card_inner">
+          <div class="suspect_card_front">
+            <label for="suspect3" class="suspect_label"></label>
+            <div class="suspect_image">
+              <img src="images/placeholder.png" alt="Portrait placeholder for Naomi Hart">
+            </div>
+            <h2 class="suspect_name">Naomi Hart</h2>
+            <p class="suspect_role">Journalist</p>
+            <p class="suspect_hint">Click to inspect suspect file</p>
+          </div>
+
+          <div class="suspect_card_back">
+            <label for="suspect3" class="suspect_label"></label>
+            <h2 class="suspect_back_name">Naomi Hart</h2>
+            <p><span class="detail_label">Role:</span> Investigative journalist invited to the estate under unclear circumstances.</p>
+            <p><span class="detail_label">Motive:</span> She was reportedly gathering evidence for an exposé that Adrian wanted buried at any cost.</p>
+            <p><span class="detail_label">Alibi:</span> Claims she was outside on the terrace taking notes and making a phone call.</p>
+            <p><span class="detail_label">Suspicious Detail:</span> She was seen carrying a recorder and a folder of documents connected to Adrian’s past.</p>
+            <p><span class="detail_label">Notes:</span> She may have uncovered something dangerous, but it is unclear whether she came to expose Adrian or confront him.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="suspect_card">
+        <input type="checkbox" id="suspect4" class="suspect_toggle">
+        <div class="suspect_card_inner">
+          <div class="suspect_card_front">
+            <label for="suspect4" class="suspect_label"></label>
+            <div class="suspect_image">
+              <img src="images/placeholder.png" alt="Portrait placeholder for Elliot Pike">
+            </div>
+            <h2 class="suspect_name">Elliot Pike</h2>
+            <p class="suspect_role">Estate Groundskeeper</p>
+            <p class="suspect_hint">Click to inspect suspect file</p>
+          </div>
+
+          <div class="suspect_card_back">
+            <label for="suspect4" class="suspect_label"></label>
+            <h2 class="suspect_back_name">Elliot Pike</h2>
+            <p><span class="detail_label">Role:</span> Groundskeeper who has worked on the Vale estate for over a decade.</p>
+            <p><span class="detail_label">Motive:</span> Adrian had recently threatened to sell part of the property, which would have cost Elliot his job and home.</p>
+            <p><span class="detail_label">Alibi:</span> Says he was in the greenhouse fixing a broken fuse box when the murder happened.</p>
+            <p><span class="detail_label">Suspicious Detail:</span> His boots were found muddy near a hallway he had no reason to use that evening.</p>
+            <p><span class="detail_label">Notes:</span> Knows the estate better than anyone and could move through it unnoticed.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="suspect_card">
+        <input type="checkbox" id="suspect5" class="suspect_toggle">
+        <div class="suspect_card_inner">
+          <div class="suspect_card_front">
+            <label for="suspect5" class="suspect_label"></label>
+            <div class="suspect_image">
+              <img src="images/placeholder.png" alt="Portrait placeholder for Celeste Monroe">
+            </div>
+            <h2 class="suspect_name">Celeste Monroe</h2>
+            <p class="suspect_role">Former Fiancée</p>
+            <p class="suspect_hint">Click to inspect suspect file</p>
+          </div>
+
+          <div class="suspect_card_back">
+            <label for="suspect5" class="suspect_label"></label>
+            <h2 class="suspect_back_name">Celeste Monroe</h2>
+            <p><span class="detail_label">Role:</span> Adrian’s former fiancée, whose engagement ended publicly and badly.</p>
+            <p><span class="detail_label">Motive:</span> She believed Adrian ruined her reputation and stole family assets promised to her during their engagement.</p>
+            <p><span class="detail_label">Alibi:</span> States she remained in the music room alone after dinner.</p>
+            <p><span class="detail_label">Suspicious Detail:</span> Guests overheard her telling Adrian, “You’ll regret this before the night is over.”</p>
+            <p><span class="detail_label">Notes:</span> Her anger is obvious, which may make her look guilty even if someone else used it as a distraction.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="suspect_card">
+        <input type="checkbox" id="suspect6" class="suspect_toggle">
+        <div class="suspect_card_inner">
+          <div class="suspect_card_front">
+            <label for="suspect6" class="suspect_label"></label>
+            <div class="suspect_image">
+              <img src="images/placeholder.png" alt="Portrait placeholder for Theo Bell">
+            </div>
+            <h2 class="suspect_name">Theo Bell</h2>
+            <p class="suspect_role">Family Friend</p>
+            <p class="suspect_hint">Click to inspect suspect file</p>
+          </div>
+
+          <div class="suspect_card_back">
+            <label for="suspect6" class="suspect_label"></label>
+            <h2 class="suspect_back_name">Theo Bell</h2>
+            <p><span class="detail_label">Role:</span> Close family friend who had been staying at the estate for the week.</p>
+            <p><span class="detail_label">Motive:</span> Adrian had discovered Theo was secretly using his name to cover gambling debts.</p>
+            <p><span class="detail_label">Alibi:</span> Claims he was upstairs in the guest wing when the lights went out.</p>
+            <p><span class="detail_label">Suspicious Detail:</span> No one can confirm seeing Theo in the guest wing during the actual time of death.</p>
+            <p><span class="detail_label">Notes:</span> Friendly and charming, but his story changes slightly each time he tells it.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="divider">
+  </main>
+
+  <footer>
+    Case File #: 12643 &nbsp;·&nbsp; March 1st &nbsp;·&nbsp; Murder Mystery
+  </footer>
+</body>
+</html>
