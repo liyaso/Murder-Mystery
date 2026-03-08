@@ -184,6 +184,7 @@
   .flip_card{
     height: 300px;
     min-height: unset;
+    overflow-y: auto;
   }
 
   .flip_card_front{
