@@ -109,18 +109,20 @@
 .suspect_image{
   width: 100%;
   max-width: 220px;
-  aspect-ratio: 3 / 4;
+  height: 300px;
   border-radius: 14px;
   overflow: hidden;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #300000;
 }
 
 .suspect_image img{
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .suspect_name,
@@ -214,5 +216,9 @@
 
   .suspect_card_back{
     padding: 22px 18px;
+  }
+
+  .suspect_image{
+    height: 280px;
   }
 }
