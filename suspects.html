@@ -14,196 +14,307 @@
   <title>Suspects</title>
 </head>
 <body>
-  <nav class="nav">
-    <a href="suspects.html" class="nav_logo">Suspects</a>
 
-    <input type="checkbox" id="menu-toggle">
+<nav class="nav">
+  <a href="suspects.html" class="nav_logo">Suspects</a>
 
-    <ul class="nav_links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="case-board.html">Case Board</a></li>
-      <li><a href="suspects.html">Suspects</a></li>
-      <li><a href="evidence.html">Evidence</a></li>
-      <li><a href="reveal.html" class="reveal_button">Reveal</a></li>
-    </ul>
+  <input type="checkbox" id="menu-toggle">
 
-    <label for="menu-toggle" class="menu-icon">
-      ☰
-    </label>
-  </nav>
+  <ul class="nav_links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="case-board.html">Case Board</a></li>
+    <li><a href="suspects.html">Suspects</a></li>
+    <li><a href="evidence.html">Evidence</a></li>
+    <li><a href="reveal.html" class="reveal_button">Reveal</a></li>
+  </ul>
 
-  <main>
-    <section class="suspects_intro">
-      <h1>Suspects</h1>
-      <p class="suspects_subheading">Everyone at the gallery had a reason to be angry with Victor Lang.</p>
-      <p class="suspects_description">
-        Victor Lang, the owner of the gallery, was found murdered during the exhibition.
-        These six individuals were all present at the event and each had a possible reason to confront him.
-        Click each suspect card to inspect their file.
-      </p>
-    </section>
+  <label for="menu-toggle" class="menu-icon">☰</label>
+</nav>
 
-    <hr class="section_divider">
+<main>
 
-    <section class="suspects_grid">
+<section class="suspects_intro">
+  <h1>Suspects</h1>
+  <p class="suspects_subheading">Everyone at the gallery had a reason to be angry with Victor Lang.</p>
+  <p class="suspects_description">
+    Victor Lang, the owner of the gallery, was found murdered during the exhibition.
+    These six individuals were all present at the event and each had a possible reason to confront him.
+    Click each suspect card to inspect their file.
+  </p>
+</section>
 
-      <div class="suspect_card">
-        <input type="checkbox" id="suspect1" class="suspect_toggle">
-        <div class="suspect_card_inner">
-          <div class="suspect_card_front">
-            <label for="suspect1" class="suspect_label"></label>
-            <div class="suspect_image">
-              <img src="images/placeholder.png" alt="Portrait placeholder for Daniel Brooks">
-            </div>
-            <h2 class="suspect_name">Daniel Brooks</h2>
-            <p class="suspect_role">Featured Artist</p>
-            <p class="suspect_hint">Click to inspect suspect file</p>
-          </div>
+<hr class="section_divider">
 
-          <div class="suspect_card_back">
-            <label for="suspect1" class="suspect_label"></label>
-            <h2 class="suspect_back_name">Daniel Brooks</h2>
-            <p><span class="detail_label">Role:</span> Featured artist whose painting is being shown at the gallery.</p>
-            <p><span class="detail_label">Motive:</span> Victor refused to pay the full amount that was originally promised for the painting.</p>
-            <p><span class="detail_label">Alibi:</span> Says he was speaking with several guests near the exhibit area during the time of the murder.</p>
-            <p><span class="detail_label">Suspicious Detail:</span> Witnesses say he looked upset earlier in the evening after speaking with Victor.</p>
-            <p><span class="detail_label">Notes:</span> Financial disagreement could give him a reason to confront Victor.</p>
-          </div>
-        </div>
-      </div>
+<section class="suspects_grid">
 
-      <div class="suspect_card">
-        <input type="checkbox" id="suspect2" class="suspect_toggle">
-        <div class="suspect_card_inner">
-          <div class="suspect_card_front">
-            <label for="suspect2" class="suspect_label"></label>
-            <div class="suspect_image">
-              <img src="images/placeholder.png" alt="Portrait placeholder for Olivia Grant">
-            </div>
-            <h2 class="suspect_name">Olivia Grant</h2>
-            <p class="suspect_role">Event Manager</p>
-            <p class="suspect_hint">Click to inspect suspect file</p>
-          </div>
 
-          <div class="suspect_card_back">
-            <label for="suspect2" class="suspect_label"></label>
-            <h2 class="suspect_back_name">Olivia Grant</h2>
-            <p><span class="detail_label">Role:</span> Event manager responsible for organizing the exhibition.</p>
-            <p><span class="detail_label">Motive:</span> Victor recently blamed her for mistakes in the event budget and threatened to fire her.</p>
-            <p><span class="detail_label">Alibi:</span> Claims she was setting up drinks and refreshments for guests in the lobby.</p>
-            <p><span class="detail_label">Suspicious Detail:</span> She had access to most areas of the gallery, including the office hallway.</p>
-            <p><span class="detail_label">Notes:</span> Losing her job could have been a strong motive.</p>
-          </div>
-        </div>
-      </div>
+<!-- Daniel Brooks -->
 
-      <div class="suspect_card">
-        <input type="checkbox" id="suspect3" class="suspect_toggle">
-        <div class="suspect_card_inner">
-          <div class="suspect_card_front">
-            <label for="suspect3" class="suspect_label"></label>
-            <div class="suspect_image">
-              <img src="images/placeholder.png" alt="Portrait placeholder for Marcus Hale">
-            </div>
-            <h2 class="suspect_name">Marcus Hale</h2>
-            <p class="suspect_role">Art Collector</p>
-            <p class="suspect_hint">Click to inspect suspect file</p>
-          </div>
+<div class="suspect_card">
+<input type="checkbox" id="suspect1" class="suspect_toggle">
 
-          <div class="suspect_card_back">
-            <label for="suspect3" class="suspect_label"></label>
-            <h2 class="suspect_back_name">Marcus Hale</h2>
-            <p><span class="detail_label">Role:</span> Wealthy art collector attending the event to purchase artwork.</p>
-            <p><span class="detail_label">Motive:</span> Victor suddenly increased the price of the featured painting during the event.</p>
-            <p><span class="detail_label">Alibi:</span> Says he stepped outside to take a phone call during the time of the murder.</p>
-            <p><span class="detail_label">Suspicious Detail:</span> No one clearly remembers seeing him leave the building.</p>
-            <p><span class="detail_label">Notes:</span> He had a financial reason to be angry with Victor.</p>
-          </div>
-        </div>
-      </div>
+<div class="suspect_card_inner">
 
-      <div class="suspect_card">
-        <input type="checkbox" id="suspect4" class="suspect_toggle">
-        <div class="suspect_card_inner">
-          <div class="suspect_card_front">
-            <label for="suspect4" class="suspect_label"></label>
-            <div class="suspect_image">
-              <img src="images/placeholder.png" alt="Portrait placeholder for Tyler Reed">
-            </div>
-            <h2 class="suspect_name">Tyler Reed</h2>
-            <p class="suspect_role">Security Guard</p>
-            <p class="suspect_hint">Click to inspect suspect file</p>
-          </div>
+<div class="suspect_card_front">
 
-          <div class="suspect_card_back">
-            <label for="suspect4" class="suspect_label"></label>
-            <h2 class="suspect_back_name">Tyler Reed</h2>
-            <p><span class="detail_label">Role:</span> Security guard responsible for monitoring cameras and building security.</p>
-            <p><span class="detail_label">Motive:</span> Victor recently discovered Tyler had been entering the storage room without permission.</p>
-            <p><span class="detail_label">Alibi:</span> Says he was checking the security system when the cameras went offline.</p>
-            <p><span class="detail_label">Suspicious Detail:</span> His keycard was used to enter the hallway near Victor’s office.</p>
-            <p><span class="detail_label">Notes:</span> His job gave him full access to the security system.</p>
-          </div>
-        </div>
-      </div>
+<label for="suspect1" class="suspect_label"></label>
 
-      <div class="suspect_card">
-        <input type="checkbox" id="suspect5" class="suspect_toggle">
-        <div class="suspect_card_inner">
-          <div class="suspect_card_front">
-            <label for="suspect5" class="suspect_label"></label>
-            <div class="suspect_image">
-              <img src="images/placeholder.png" alt="Portrait placeholder for Sarah Kim">
-            </div>
-            <h2 class="suspect_name">Sarah Kim</h2>
-            <p class="suspect_role">Journalist</p>
-            <p class="suspect_hint">Click to inspect suspect file</p>
-          </div>
+<div class="suspect_image">
+<img src="images/daniel-brooks.jpg" alt="Portrait of Daniel Brooks">
+</div>
 
-          <div class="suspect_card_back">
-            <label for="suspect5" class="suspect_label"></label>
-            <h2 class="suspect_back_name">Sarah Kim</h2>
-            <p><span class="detail_label">Role:</span> Journalist invited to cover the gallery exhibition.</p>
-            <p><span class="detail_label">Motive:</span> Victor refused to give her exclusive access to the gallery’s upcoming collection.</p>
-            <p><span class="detail_label">Alibi:</span> Says she was interviewing guests in the main hall.</p>
-            <p><span class="detail_label">Suspicious Detail:</span> She was seen walking near the office hallway earlier in the evening.</p>
-            <p><span class="detail_label">Notes:</span> She may have been trying to get a story.</p>
-          </div>
-        </div>
-      </div>
+<h2 class="suspect_name">Daniel Brooks</h2>
+<p class="suspect_role">Featured Artist</p>
+<p class="suspect_hint">Click to inspect suspect file</p>
 
-      <div class="suspect_card">
-        <input type="checkbox" id="suspect6" class="suspect_toggle">
-        <div class="suspect_card_inner">
-          <div class="suspect_card_front">
-            <label for="suspect6" class="suspect_label"></label>
-            <div class="suspect_image">
-              <img src="images/placeholder.png" alt="Portrait placeholder for Ethan Parker">
-            </div>
-            <h2 class="suspect_name">Ethan Parker</h2>
-            <p class="suspect_role">Assistant Curator</p>
-            <p class="suspect_hint">Click to inspect suspect file</p>
-          </div>
+</div>
 
-          <div class="suspect_card_back">
-            <label for="suspect6" class="suspect_label"></label>
-            <h2 class="suspect_back_name">Ethan Parker</h2>
-            <p><span class="detail_label">Role:</span> Assistant curator who helps manage the gallery’s artwork.</p>
-            <p><span class="detail_label">Motive:</span> Victor was planning to replace him with a new curator.</p>
-            <p><span class="detail_label">Alibi:</span> Claims he was cataloging paintings in the storage room.</p>
-            <p><span class="detail_label">Suspicious Detail:</span> He knew the layout of the gallery and the office schedule very well.</p>
-            <p><span class="detail_label">Notes:</span> Losing his position could have motivated him.</p>
-          </div>
-        </div>
-      </div>
+<div class="suspect_card_back">
 
-    </section>
+<label for="suspect1" class="suspect_label"></label>
 
-    <hr class="divider">
-  </main>
+<h2 class="suspect_back_name">Daniel Brooks</h2>
 
-  <footer>
-    Case File #: 12643 &nbsp;·&nbsp; March 1st &nbsp;·&nbsp; Murder Mystery
-  </footer>
+<p><span class="detail_label">Role:</span> Featured artist whose painting is being shown at the gallery.</p>
+
+<p><span class="detail_label">Motive:</span> Victor refused to pay the full amount that was originally promised for the painting.</p>
+
+<p><span class="detail_label">Alibi:</span> Says he was speaking with several guests near the exhibit area during the time of the murder.</p>
+
+<p><span class="detail_label">Suspicious Detail:</span> Witnesses say he looked upset earlier in the evening after speaking with Victor.</p>
+
+<p><span class="detail_label">Notes:</span> Financial disagreement could give him a reason to confront Victor.</p>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Olivia Grant -->
+
+<div class="suspect_card">
+<input type="checkbox" id="suspect2" class="suspect_toggle">
+
+<div class="suspect_card_inner">
+
+<div class="suspect_card_front">
+
+<label for="suspect2" class="suspect_label"></label>
+
+<div class="suspect_image">
+<img src="images/olivia-grant.jpg" alt="Portrait of Olivia Grant">
+</div>
+
+<h2 class="suspect_name">Olivia Grant</h2>
+<p class="suspect_role">Event Manager</p>
+<p class="suspect_hint">Click to inspect suspect file</p>
+
+</div>
+
+<div class="suspect_card_back">
+
+<label for="suspect2" class="suspect_label"></label>
+
+<h2 class="suspect_back_name">Olivia Grant</h2>
+
+<p><span class="detail_label">Role:</span> Event manager responsible for organizing the exhibition.</p>
+
+<p><span class="detail_label">Motive:</span> Victor recently blamed her for mistakes in the event budget and threatened to fire her.</p>
+
+<p><span class="detail_label">Alibi:</span> Claims she was setting up drinks and refreshments for guests in the lobby.</p>
+
+<p><span class="detail_label">Suspicious Detail:</span> She had access to most areas of the gallery, including the office hallway.</p>
+
+<p><span class="detail_label">Notes:</span> Losing her job could have been a strong motive.</p>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Marcus Hale -->
+
+<div class="suspect_card">
+<input type="checkbox" id="suspect3" class="suspect_toggle">
+
+<div class="suspect_card_inner">
+
+<div class="suspect_card_front">
+
+<label for="suspect3" class="suspect_label"></label>
+
+<div class="suspect_image">
+<img src="images/marcus-hale.jpg" alt="Portrait of Marcus Hale">
+</div>
+
+<h2 class="suspect_name">Marcus Hale</h2>
+<p class="suspect_role">Art Collector</p>
+<p class="suspect_hint">Click to inspect suspect file</p>
+
+</div>
+
+<div class="suspect_card_back">
+
+<label for="suspect3" class="suspect_label"></label>
+
+<h2 class="suspect_back_name">Marcus Hale</h2>
+
+<p><span class="detail_label">Role:</span> Wealthy art collector attending the event to purchase artwork.</p>
+
+<p><span class="detail_label">Motive:</span> Victor suddenly increased the price of the featured painting during the event.</p>
+
+<p><span class="detail_label">Alibi:</span> Says he stepped outside to take a phone call during the time of the murder.</p>
+
+<p><span class="detail_label">Suspicious Detail:</span> No one clearly remembers seeing him leave the building.</p>
+
+<p><span class="detail_label">Notes:</span> He had a financial reason to be angry with Victor.</p>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Tyler Reed -->
+
+<div class="suspect_card">
+<input type="checkbox" id="suspect4" class="suspect_toggle">
+
+<div class="suspect_card_inner">
+
+<div class="suspect_card_front">
+
+<label for="suspect4" class="suspect_label"></label>
+
+<div class="suspect_image">
+<img src="images/tyler-reed.jpg" alt="Portrait of Tyler Reed">
+</div>
+
+<h2 class="suspect_name">Tyler Reed</h2>
+<p class="suspect_role">Security Guard</p>
+<p class="suspect_hint">Click to inspect suspect file</p>
+
+</div>
+
+<div class="suspect_card_back">
+
+<label for="suspect4" class="suspect_label"></label>
+
+<h2 class="suspect_back_name">Tyler Reed</h2>
+
+<p><span class="detail_label">Role:</span> Security guard responsible for monitoring cameras and building security.</p>
+
+<p><span class="detail_label">Motive:</span> Victor recently discovered Tyler had been entering the storage room without permission.</p>
+
+<p><span class="detail_label">Alibi:</span> Says he was checking the security system when the cameras went offline.</p>
+
+<p><span class="detail_label">Suspicious Detail:</span> His keycard was used to enter the hallway near Victor’s office.</p>
+
+<p><span class="detail_label">Notes:</span> His job gave him full access to the security system.</p>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Sarah Kim -->
+
+<div class="suspect_card">
+<input type="checkbox" id="suspect5" class="suspect_toggle">
+
+<div class="suspect_card_inner">
+
+<div class="suspect_card_front">
+
+<label for="suspect5" class="suspect_label"></label>
+
+<div class="suspect_image">
+<img src="images/sarah-kim.jpg" alt="Portrait of Sarah Kim">
+</div>
+
+<h2 class="suspect_name">Sarah Kim</h2>
+<p class="suspect_role">Journalist</p>
+<p class="suspect_hint">Click to inspect suspect file</p>
+
+</div>
+
+<div class="suspect_card_back">
+
+<label for="suspect5" class="suspect_label"></label>
+
+<h2 class="suspect_back_name">Sarah Kim</h2>
+
+<p><span class="detail_label">Role:</span> Journalist invited to cover the gallery exhibition.</p>
+
+<p><span class="detail_label">Motive:</span> Victor refused to give her exclusive access to the gallery’s upcoming collection.</p>
+
+<p><span class="detail_label">Alibi:</span> Says she was interviewing guests in the main hall.</p>
+
+<p><span class="detail_label">Suspicious Detail:</span> She was seen walking near the office hallway earlier in the evening.</p>
+
+<p><span class="detail_label">Notes:</span> She may have been trying to get a story.</p>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Ethan Parker -->
+
+<div class="suspect_card">
+<input type="checkbox" id="suspect6" class="suspect_toggle">
+
+<div class="suspect_card_inner">
+
+<div class="suspect_card_front">
+
+<label for="suspect6" class="suspect_label"></label>
+
+<div class="suspect_image">
+<img src="images/ethan-parker.jpg" alt="Portrait of Ethan Parker">
+</div>
+
+<h2 class="suspect_name">Ethan Parker</h2>
+<p class="suspect_role">Assistant Curator</p>
+<p class="suspect_hint">Click to inspect suspect file</p>
+
+</div>
+
+<div class="suspect_card_back">
+
+<label for="suspect6" class="suspect_label"></label>
+
+<h2 class="suspect_back_name">Ethan Parker</h2>
+
+<p><span class="detail_label">Role:</span> Assistant curator who helps manage the gallery’s artwork.</p>
+
+<p><span class="detail_label">Motive:</span> Victor was planning to replace him with a new curator.</p>
+
+<p><span class="detail_label">Alibi:</span> Claims he was cataloging paintings in the storage room.</p>
+
+<p><span class="detail_label">Suspicious Detail:</span> He knew the layout of the gallery and the office schedule very well.</p>
+
+<p><span class="detail_label">Notes:</span> Losing his position could have motivated him.</p>
+
+</div>
+
+</div>
+</div>
+
+
+</section>
+
+<hr class="divider">
+
+</main>
+
+<footer>
+Case File #: 12643 · March 4th · Murder Mystery
+</footer>
+
 </body>
 </html>
