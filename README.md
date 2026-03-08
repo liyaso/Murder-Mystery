@@ -39,6 +39,6 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## Disclaimer
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This is a work of fiction. Any similarity to actual persons or events, is purely coincidental
