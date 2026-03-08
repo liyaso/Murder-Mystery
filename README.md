@@ -24,8 +24,11 @@ Or download the folder to see the code and have a local copy
 Once you enter the website, you will be greeted with a welcome message. Hit "Enter the Case" to explore the website and solve the mystery. Enjoy!
 
 ## Citations
-To get pictures of the characters on the suspects page we used Adobe Stock: https://stock.adobe.com/search?k=characters&asset_id=297881676
-The image of the art gallery on the Homepage is taken from: https://www.yorkpress.co.uk/news/24101895.colour-light-york-bid-lights-citys-art-gallery/
+To get pictures of the characters on the suspects page we used Adobe Stock: 
+      https://stock.adobe.com/search?k=characters&asset_id=297881676
+      
+The image of the art gallery on the Homepage is taken from: 
+      https://www.yorkpress.co.uk/news/24101895.colour-light-york-bid-lights-citys-art-gallery/
 
 ## Contributing
 
