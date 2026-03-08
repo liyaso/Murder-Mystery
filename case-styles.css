@@ -101,12 +101,6 @@
   background-color: var(--red-text);
 }
 
-@media (prefers-reduced-motion: no-preference){
-  .critical{
-    animation: pulse 2.5s infinite;
-  }
-}
-
 .flip_card_front, .flip_card_back{
   position: absolute;
   width: 100%;
@@ -150,6 +144,19 @@
   font-size: 18px;
 }
 
+/* Reduced Motion */
+@media (prefers-reduced-motion: no-preference){
+  .critical{
+    animation: pulse 2.5s infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .critical{
+    animation: none;
+  }
+}
+
 /* Mobile Responsive */
 @media (min-width: 641px) and (max-width: 1024px){
   .card_grid{
@@ -177,6 +184,7 @@
   .flip_card{
     height: 300px;
     min-height: unset;
+    overflow-y: auto;
   }
 
   .flip_card_front{

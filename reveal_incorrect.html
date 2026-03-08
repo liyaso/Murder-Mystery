@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reveal_incorrect.css">
+
+  <title>Incorrect</title>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <nav class="nav">
+    <a href="reveal_incorrect.html" class="nav_logo">Reveal</a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <ul class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-board.html">Case Board</a></li>
+      <li><a href="suspects.html">Suspects</a></li>
+      <li><a href="evidence.html">Evidence</a></li>
+      <li><a href="reveal_incorrect.html" class="reveal_button">Reveal</a></li>
+    </ul>
+
+    <label for="menu-toggle" class="menu-icon">
+      ☰
+    </label>
+  </nav>
+
+  <main>
+    <input type="checkbox" id="answer_toggle" class="answer_toggle">
+
+    <section class="incorrect_reveal">
+      <h1 class="not_quite">Not Quite ...</h1>
+      <h2 class="inc_description">Unfortunately, you did not select the true killer</h2>
+      <h2 class="question">Do you want to try again or reveal the answer?</h2>
+      <div class="button_row">
+        <a href="reveal.html" class="try_again">Try Again</a>
+        <label for="answer_toggle" class="answer">Answer</label>
+      </div>
+    </section>
+
+    <section class="answer_section">
+      <hr class="answer_divider">
+      <h2 class="answer_title">Answer</h2>
+      <p class="subtitle1">The true killer is ... </p>
+      <h2 class="suspect_name">Tyler Reed</h2>
+      <p class="story">Victor Langley had recently discovered that Tyler Reed had been stealing valuable paintings from the gallery storage room and secretly selling them.
+                      During the exhibition, Victor confronted Tyler about the missing artwork.
+                      To avoid being exposed, Tyler disabled the security cameras and went to Victor’s office.
+                      Their argument quickly turned violent, and Tyler grabbed the letter opener from Victor’s desk and killed him.
+                      The keycard logs, fingerprints, and missing artwork report all point to Tyler as the killer.
+      </p>
+      <p class="thank_you">Thank you for playing!</p>
+    </section>
+
+    <hr class="divider">
+  </main>
+
+  <footer>
+    Case File #: 12643 &nbsp;·&nbsp; March 1st  &nbsp;·&nbsp; Murder Mystery 
+  </footer>
+</body>
+</html>

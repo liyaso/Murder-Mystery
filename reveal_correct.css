@@ -1,0 +1,133 @@
+.correct_section{
+  display: block;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.congrats_text{
+  margin: 100px
+}
+
+.congratulations{
+  font-size: 96px;
+  background: linear-gradient(90deg, rgb(4, 71, 4), #2dce3d, rgb(4, 71, 4));
+  background-size: 200% auto;
+  -webkit-background-clip: text; 
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+@keyframes sparkle {
+  to {background-position: 200% center;}
+}
+
+.confirm_suspect{
+  color: var(--secondary-red);
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation-name: fadeIn;
+}
+
+.full_story{
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  animation-name: fadeIn;
+}
+
+.thanks{
+  color: var(--red-accent);
+  font-size: 35px;
+  animation-name: fadeIn;
+}
+
+/* Fade In styling */
+.congratulations{animation-delay: 0s;}
+.confirm_suspect{animation-delay: 1.5s;}
+.full_story{animation-delay: 3s;}
+.thanks{animation-delay: 4.5s;}
+
+.fade_item{
+  opacity: 0;
+  font-family: var(--font-display);
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: no-preference){
+  .congratulations{
+    animation: sparkle 3s linear infinite, fadeIn 1s ease forwards;
+  }
+
+  .fade_item{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .congratulations{
+    animation: none;
+    opacity: 1;
+  }
+
+  .fade_item{
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Responsive Styling */
+@media (min-width: 601px) and (max-width: 1024px){
+  .congrats_text{
+    margin: 50px;
+  }
+
+  .congratulations{
+    font-size: 64px;
+  }
+
+  .confirm_suspect{
+    font-size: 44px;
+  }
+
+  .full_story{
+    font-size: 35px;
+  }
+
+  .thanks{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 600px){
+  .congrats_text{
+    margin: 15px;
+    padding: 0 15px;
+  }
+  
+  .congratulations{
+    font-size: 30px;
+  }
+  
+  .confirm_suspect{
+    font-size: 24px;
+  }
+  
+  .full_story{
+    font-size: 25px;
+  }
+  
+  .thanks{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
